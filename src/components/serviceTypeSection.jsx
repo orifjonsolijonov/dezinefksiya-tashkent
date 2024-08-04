@@ -17,11 +17,47 @@ import burgalar3 from "../assets/images/serviceTypeImages/burgalar3.png";
 
 function serviceTypeSection() {
   return (
-     <ServiceTypeCard
-            title="KLAPALAR"
-            description={"Ular to‘shakda, yumshoq mebelda, to‘qimachilikda, yeshik romlari va deraza romlari ostida yashaydilar. Ular odamlar va issiq qonli hayvonlarning qoni bilan oziqlanadi. Allergiya va og‘ir psixologik noqulaylikni qo‘zg‘atadi."}
-            images={[klapa1, klapa2, klapa3]}
+    <div className="mt-[75px]">
+      <div className="container flex justify-center items-start flex-wrap gap-[3vw]">
+        <ServiceTypeCard
+          title="KLAPALAR"
+          description={
+            "Ular to'shakda, yumshoq mebelda, to'qimachilikda, yeshik romlari va deraza romlari ostida yashaydilar. Ular odamlar va issiq qonli hayvonlarning qoni bilan oziqlanadi. Allergiya va og‘ir psixologik noqulaylikni qo‘zg‘atadi."
+          }
+          images={[klapa1, klapa2, klapa3]}
         />
+        <ServiceTypeCard
+          title="TARAKANLAR"
+          description={
+            "Ular patogenlarni olib yuradilar. Ular yoriqlarda, taglik tagida, mebel orqasida, hammom ostida, shkaflar ostida va hokazolarda yashaydilar. Ular oziq-ovqat, maishiy chiqindilar, charm buyumlar va qog‘oz bilan oziqlanadilar."
+          }
+          images={[tarakan1, tarakan2, tarakan3]}
+        />
+        <ServiceTypeCard
+          title="CHAYON"
+          description={
+            "Hasharotlar va araxnidlar bilan oziqlanadigan issiqlikni yaxshi ko‘radigan jonzotlar. Ular omborlarda va uylarda yashashlari mumkin, lekin ko‘pincha ular yog‘och binolarda topiladi, ular inson salomatligi uchun xavfli hissoblanadi..."
+          }
+          images={[chayon1, chayon2, chayon3]}
+        />
+
+        <ServiceTypeCard
+          title="KEMIRUVCHILAR"
+          description={
+            "Yeng keng tarqalgan kalamushlar va sichqonlar. Ular patogenlarni olib yuradi, barcha sirtlarda ishlaydi, devor va shiftlarda o‘tish joylarini yaratadi, strukturaning ishonchliligini pasaytiradi. Ular oziq-ovqat va maishiy chiqindilar bilan oziqlanadi..."
+          }
+          images={[kemiruvchilar1, kemiruvchilar2, kemiruvchilar3]}
+        />
+
+        <ServiceTypeCard
+          title="BURGALAR"
+          description={
+            "Ular uy hayvonlari tanasiga kirib, qo‘shnilardan ko‘chib ketishadi. Ular yumshoq mebellar, ko‘rpa-to‘shaklar, gilamlar, yumshoq o‘yinchoqlar, taglik tagida va deraza va yeshik romlarida yashaydilar. Ular odamlar va hayvonlarning qoni bilan oziqlanadi. Ular kasalliklarga olib keladi ..."
+          }
+          images={[burgalar1, burgalar2, burgalar3]}
+        />
+      </div>
+    </div>
   );
 }
 

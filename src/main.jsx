@@ -9,6 +9,8 @@ import Advantages from "./components/advantages";
 import CtaSection from "./components/ctaSection";
 import ServicesSection from "./components/servicesSection";
 import ServiceTypeSection from "./components/serviceTypeSection";
+import CorporationCtaSection from "./components/corporationCtaSection";
+import Faqs from "./components/faqs";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -27,9 +29,17 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <SectionHeadline
       title={"Xizmat turlari"}
       description={
-        "Agar ushbu holatlardan biri uyingiz yoki ish joyingizda kuzatilayotgan bo’lsa darhol biz bilan bog’laning"
+        "Agar ushbu holatlardan biri uyingiz yoki ish joyingizda kuzatilayotgan bo'lsa darhol biz bilan bog'laning"
       }
     />
-    {/* <ServiceTypeSection/> */}
+    <ServiceTypeSection/>
+    <CorporationCtaSection/>
+    <SectionHeadline
+      title={"Ko'p berildigan savollar"}
+      description={
+        "Murojaatchilar tomonidan eng ko'p berildigan savollarga javoblar oling"
+      }
+    />
+    <Faqs/>
   </React.StrictMode>
 );

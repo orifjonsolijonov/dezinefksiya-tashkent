@@ -117,4 +117,46 @@ header .container {
     gap: 10rem;
     font-size: 18px;
   }
+  .servicetypeimg:last-of-type {
+    display: none;
+  }
+}
+.cta-txt {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 45px;
+  &::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #99D7E4;
+    margin-top: 8px;
+  }
+}
+.serviceType {
+  flex-basis: 450px;
+}
+@media (max-width: 1024px) {
+  .corporationCtaSection {
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      display: none;
+    }
+  }
+  .ctasection_rightside_contents_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.faqs {
+  
 }
