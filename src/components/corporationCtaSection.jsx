@@ -4,7 +4,7 @@ import arrow from "../assets/icons/arrow_top-icon.svg";
 
 function corporationCtaSection() {
   return (
-    <div className="wrapper mt-[100px] px-5">
+    <div className="wrapper mt-[100px] px-5 box-border">
       <div className="corporationCtaSection container flex justify-between items-center gap-[5%] bg-[#33A9FF] rounded-xl p-[32px]">
         <img
           src={dezinfeksiyachi2}

@@ -11,6 +11,7 @@ import ServicesSection from "./components/servicesSection";
 import ServiceTypeSection from "./components/serviceTypeSection";
 import CorporationCtaSection from "./components/corporationCtaSection";
 import Faqs from "./components/faqs";
+import Footer from "./components/footer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -41,5 +42,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       }
     />
     <Faqs/>
+    <Footer/>
   </React.StrictMode>
 );

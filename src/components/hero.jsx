@@ -1,5 +1,9 @@
 import arrow from "../assets/icons/arrow_top-icon.svg";
+import { useState } from "react";
+import { ModalComponent } from "./modal";
+
 function hero() {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div className="container 2xl mx-auto">
       <section className="hero mt-[2rem] p-5 sm:p-8 rounded-[16px] flex flex-col justify-start sm:justify-center items-start">
@@ -17,8 +21,10 @@ function hero() {
                          bg-[#12C4FC] font-Gilroy font-medium
                          md:px-[3rem] px-[1.5rem] py-[1rem] rounded-full
                          mt-[3rem] text-[14px] sm:w-[auto] w-[90%] text-center "
+                         onClick={() => setOpenModal(true)}
         >Hoziroq murojaat qilish <img src={arrow} alt="arrow" /> </button>
       </section>
+      <ModalComponent openModal={openModal} setOpenModal={setOpenModal} />
     </div>
   );
 }

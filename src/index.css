@@ -133,7 +133,7 @@ header .container {
     width: 70px;
     height: 10px;
     border-radius: 50px;
-    background-color: #99D7E4;
+    background-color: #99d7e4;
     margin-top: 8px;
   }
 }
@@ -156,7 +156,13 @@ header .container {
     text-align: center;
   }
 }
-
-.faqs {
-  
-}
+/* footer {
+  background-image: url("https://dezopttorg.ru/wp-content/uploads/2021/10/portrait-professional-exterminator-holding-sprayer-with-chemicals-pest-control-scaled.jpg");
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 97%;
+  min-height: 450px;
+  margin: 64px auto 1rem;
+  border-radius: 29px;
+} */
