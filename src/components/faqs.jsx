@@ -35,7 +35,7 @@ const AccordionItem = ({ header, ...rest }) => (
 
 export default function Faqs() {
   return (
-    <div className="flex justify-center mx-2 my-4">
+    <div className="flex justify-center mx-2 my-4" id="Savollar">
       <div className="w-full max-w-[100%] sm:max-w-[60%]">
         {/* `transitionTimeout` prop should be equal to the transition duration in CSS */}
         <Accordion transition transitionTimeout={200}>

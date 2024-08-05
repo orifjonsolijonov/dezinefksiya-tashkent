@@ -166,3 +166,6 @@ header .container {
   margin: 64px auto 1rem;
   border-radius: 29px;
 } */
+html {
+  scroll-behavior: smooth;
+}

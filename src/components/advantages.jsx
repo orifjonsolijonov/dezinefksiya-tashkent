@@ -4,7 +4,7 @@ import adv2 from "../assets/icons/diploma-icon.svg";
 import adv3 from "../assets/icons/hand_shake-icon.svg";
 function Advantages() {
   return (
-    <section className="advantages mt-[3rem]">
+    <section className="advantages mt-[3rem]" id="Avfzalliklar">
       <div className="container mx-auto flex flex-col md:flex-row items-start justify-between gap-12">
         <Advantage
           imgsrc={adv1}

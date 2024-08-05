@@ -1,8 +1,12 @@
 import dezinfeksiyachi2 from "../assets/images/dezeinfeksiachi.jpg";
 import iconImg from "/src/assets/images/3dicons.png";
 import arrow from "../assets/icons/arrow_top-icon.svg";
+import { useState } from "react";
+import { ModalComponent } from "./modal";
 
 function corporationCtaSection() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="wrapper mt-[100px] px-5 box-border">
       <div className="corporationCtaSection container flex justify-between items-center gap-[5%] bg-[#33A9FF] rounded-xl p-[32px]">
@@ -23,11 +27,13 @@ function corporationCtaSection() {
                      bg-[#5DFB89] hover:bg-[#78E095] font-Gilroy font-medium
                        md:px-[3rem] px-[1.5rem] py-[1rem] rounded-full
                        mt-[2rem] text-[14px] sm:w-[auto] w-[70%] text-center "
+            onClick={() => setOpenModal(true)}
           >
             Bog'lanish <img src={arrow} alt="arrow" />
           </button>
         </div>
       </div>
+      <ModalComponent openModal={openModal} setOpenModal={setOpenModal} />
     </div>
   );
 }

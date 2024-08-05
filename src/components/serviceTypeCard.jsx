@@ -1,5 +1,10 @@
 import arrowLeft from "../assets/icons/arrow-left.svg";
+import { useState } from "react";
+import { ModalComponent } from "./modal";
+
 function ServiceTypeCard({ title, description, images }) {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <section className="serviceType  border-solid border-[1px] border-[#7D7D7D] rounded-[32px] px-[28px] py-[37px] flex-grow">
       <h3 className="text-[24px] font-bold mb-6 text-[#333333]">{title}</h3>
@@ -20,8 +25,10 @@ function ServiceTypeCard({ title, description, images }) {
           src={arrowLeft}
           alt="arrowleft"
           className="px-[19px] py-7 bg-[#99D7E4] rounded-full cursor-pointer"
+          onClick={() => setOpenModal(true)}
         />
       </div>
+      <ModalComponent openModal={openModal} setOpenModal={setOpenModal} />
     </section>
   );
 }
